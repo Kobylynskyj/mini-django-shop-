@@ -1,0 +1,22 @@
+{% extends "base/base.html" %}
+
+{{% block title %}
+    <h2>Головна</h2>
+{% endblock title %}}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{% block content %}
+        <h1 class="hero_title">Ласкаво просимо до Mini Django Shop!</h1>
+         <a class="products_link" href="{% url 'products' %}">Перейти до каталогу</a>
+    {% endblock content %}}
+</body>    
+</html>

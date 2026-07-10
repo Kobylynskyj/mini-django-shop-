@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.header_div{
+max-width: 100%;
+padding: 10px;
+display: flex;
+flex-direction: row;
+background-color: beige;
+height: 100px;
+align-items: center;
+justify-content: space-evenly;
+}
+
+.ul_list{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.header_nav{
+        &:hover{
+        color: rgb(181, 59, 59);
+    }
+}
+
+.hero_title{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.products_link{
+    margin: 10px;
+    padding: 10px;
+    &:hover{
+        color: blue;
+    }
+}
+

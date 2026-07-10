@@ -1,0 +1,14 @@
+{% extends "base/base.html" %}
+
+{% block title %}Реєстрація{% endblock %}
+
+{% block content %}
+    <h1>Реєстрація</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Логін">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Пароль">
+        <button type="submit">Зареєструватись</button>
+    </form>
+{% endblock %}

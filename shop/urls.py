@@ -1,7 +1,7 @@
 from django.urls import path
 from shop.views import index,about,contact,product_list,product_detail,login_view,register_view,logout_view
 urlpatterns = [
-    path('', index, name="home_page"),
+    path('', index, name="index"),
     path('about/', about, name="about"),
     path('contacts/', contact, name="contacts"),
     path('products/', product_list, name="products"),
