@@ -1,27 +1,54 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from datetime import datetime
 # Create your views here.
 
 def index(request):
-    return render(request, "shop/index.html")
+    context = {
+        'date': datetime.now(),
+    }
+    return render(request, "shop/index.html",context)
 
 def about(request):
-    return render(request, "shop/about.html")
+    context = {
+        'date': datetime.now(),
+    }
+    return render(request, "shop/about.html",context)
+
 
 def contact(request):
-    return render(request, "shop/contacts.html")
+    context = {
+        'date': datetime.now(),
+    }
+    return render(request, "shop/contacts.html",context)
 
 def product_list(request):
-    return render(request, "shop/products.html")
+    context = {
+        'date': datetime.now(),
+    }
+    return render(request, "shop/products.html",context)
 
 def product_detail(request,pk):
-    return   render(request, "shop/product_detali.html")
+    context = {
+        'date': datetime.now(),
+    }
+    return   render(request, "shop/product_detali.html",context)
 
 def login_view(request):
-    return render(request, "shop/login_view.html")
+    context = {
+        'date': datetime.now(),
+    }
+    return render(request, "shop/login_view.html", context)
 
 def register_view(request):
-    return render(request, "shop/register_view.html")
+    context = {
+        'date': datetime.now(),
+    }
+    return render(request, "shop/register_view.html", context)
 
 def logout_view(request):
-    return HttpResponse("выход из аккаунта")
+    context = {
+        'date': datetime.now(),
+    }
+    return HttpResponse("выход из аккаунта", content)
+
