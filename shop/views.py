@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import datetime
+
 # Create your views here.
 
 def index(request):
@@ -32,7 +33,7 @@ def product_detail(request,pk):
     context = {
         'date': datetime.now(),
     }
-    return   render(request, "shop/product_detali.html",context)
+    return  render(request, "shop/product_detali.html",context)
 
 def login_view(request):
     context = {
@@ -50,5 +51,7 @@ def logout_view(request):
     context = {
         'date': datetime.now(),
     }
-    return HttpResponse("выход из аккаунта", content)
+    return HttpResponse("выход из аккаунта", context)
+
+
 
